@@ -5,9 +5,9 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 
 # Load models only once
-diabetes_model = pickle.load(open(r"C:\Users\sahaa\OneDrive\Documents\Disease Outbreaks\training_models\diabetes_model.sav", "rb"))
-heart_model = pickle.load(open(r"C:\Users\sahaa\OneDrive\Documents\Disease Outbreaks\training_models\heart_model.sav", "rb"))
-parkinsons_model = pickle.load(open(r"C:\Users\sahaa\OneDrive\Documents\Disease Outbreaks\training_models\parkinsons_model.sav", "rb"))
+diabetes_model = pickle.load(open("training_models/diabetes_model.sav", "rb"))
+heart_model = pickle.load(open("training_models/heart_model.sav", "rb"))
+parkinsons_model = pickle.load(open("training_models/parkinsons_model.sav", "rb"))
 
 st.set_page_config(page_title='Prediction of Disease Outbreak', layout='wide', page_icon='🩺')
 
